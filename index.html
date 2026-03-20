@@ -127,6 +127,40 @@
       .links-grid p {
         margin: 0;
       }
+
+      /* Intro Section Layout */
+      .intro-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 2rem;
+      }
+
+      .intro-text {
+        flex: 1;
+      }
+
+      .intro-image-container {
+        flex-shrink: 0;
+        text-align: center;
+      }
+
+      .profile-img {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        display: block;
+        margin: 0 auto 0.5rem auto; /* Centered */
+      }
+
+      /* Desktop layout */
+      @media (min-width: 600px) {
+        .intro-wrapper {
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+        }
+      }
     </style>
   </head>
 
@@ -134,17 +168,28 @@
     <main class="container">
       
       <!-- HEADER / INTRO -->
-      <section>
-        <h1>Dhruv Kohli</h1>
-        <img src="images/dhruv_siam_mds_2024.jpg" height="200" alt="Dhruv Kohli at SIAM MDS, Atlanta, 2024" class="profile-img">
-        <p class="img-caption">*at SIAM MDS, Atlanta, 2024.</p>
-        
-        <p>
-          I am a postdoc in the <a href="https://www.pacm.princeton.edu/">Program in Applied and Computational Mathematics</a> at Princeton University, working with <a href="https://web.math.princeton.edu/~amits/">Amit Singer</a>.
-        </p>
-        <p>
-          I completed my PhD in mathematics with a specialization in computational science at UC San Diego, where I was fortunate to be advised by <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a> and <a href="http://mishne.ucsd.edu/">Gal Mishne</a>.
-        </p>
+      <!-- HEADER / INTRO -->
+      <section class="intro-wrapper">
+        <div class="intro-text">
+          <h1 style="margin-top: 0;">Dhruv Kohli</h1>
+          <p>
+            I am a postdoc in the <a href="https://www.pacm.princeton.edu/">Program in Applied and Computational Mathematics</a> at Princeton University, working with <a href="https://web.math.princeton.edu/~amits/">Amit Singer</a>.
+          </p>
+          <p>
+            I completed my PhD in mathematics with a specialization in computational science at UC San Diego in 2025, where I was fortunate to be advised by <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a> and <a href="http://mishne.ucsd.edu/">Gal Mishne</a>.
+          </p>
+          <p>
+            <strong>Research Interests:</strong> Manifold learning, computational mathematics, and robust estimation.
+          </p>
+          <p>
+            <strong>Contact:</strong> <a href="mailto:your.email@princeton.edu">your.email@princeton.edu</a>
+          </p>
+        </div>
+
+        <div class="intro-image-container">
+          <img src="images/dhruv_siam_mds_2024.jpg" height="200" alt="Dhruv Kohli at SIAM MDS, Atlanta, 2024" class="profile-img">
+          <p class="img-caption">SIAM MDS, Atlanta (2024)</p>
+        </div>
       </section>
 
       <hr>
