@@ -156,12 +156,16 @@
       /* Desktop layout */
       @media (min-width: 600px) {
         .intro-wrapper {
-          display: flex;
-          flex-direction: column-reverse;
-          gap: 2rem;
-          align-items: center;
-          margin-top: 0.5rem; /* Reduced from 2rem */
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
         }
+        
+        /* Add this block to push the image down past the <h1> */
+        .intro-image-container {
+          margin-top: 3.5rem; 
+        }
+      }
       }
     </style>
   </head>
@@ -170,9 +174,8 @@
     <main class="container">
       
       <!-- HEADER / INTRO -->
-      <h1 style="margin-top: 0;">Dhruv Kohli</h1>
-      
       <section class="intro-wrapper">
+        <h1 style="margin-top: 0;">Dhruv Kohli</h1>
         <div class="intro-text">
           <p style="margin-top: 0;">
             I am a postdoc in the <a href="https://www.pacm.princeton.edu/">Program in Applied and Computational Mathematics</a> at Princeton University, working with <a href="https://web.math.princeton.edu/~amits/">Amit Singer</a>.
