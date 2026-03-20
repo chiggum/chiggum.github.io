@@ -1,305 +1,355 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Kohli</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LQ55H41QP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-1LQ55H41QP');
     </script>
+
     <style>
-      div.ex1 {
-        max-width: 500px;
-        margin: auto;
-        border: 3px solid #73AD21;
+      /* Modern CSS Reset & Variables */
+      :root {
+        --text-color: #333333;
+        --link-color: #0056b3;
+        --link-hover: #003d82;
+        --bg-color: #ffffff;
+        --border-color: #dddddd;
       }
-      </style>
-    <style type="text/css">
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+
+      h1, h2, h3 {
+        color: #111;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      h4 {
+        color: #444;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        font-size: 1.1em;
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: var(--link-hover);
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid var(--border-color);
+        margin: 2rem 0;
+      }
+
+      /* Profile Image */
+      .profile-img {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .img-caption {
+        font-size: 0.85em;
+        color: #666;
+        margin-top: 0;
+      }
+
+      /* Lists (Publications) */
+      ul {
+        padding-left: 1.5rem;
+      }
+
+      ul.publications {
+        margin-bottom: 2rem;
+      }
+
+      ul.publications > li {
+        margin-bottom: 1.5rem;
+      }
+
+      ul.sub-list {
+        margin-top: 0.5rem;
+        padding-left: 1.5rem;
+        font-size: 0.9em;
+      }
+
+      /* Tables (Conferences & Teaching) */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+      }
+
       td {
-        padding: 0 5px;
+        padding: 0.75rem 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+        vertical-align: top;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      /* Links section */
+      .links-grid {
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .links-grid p {
+        margin: 0;
       }
     </style>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Dhruv Kohli</title>
-
-<!--     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width"> -->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
+
   <body>
-    <div class="ex2">
+    <main class="container">
+      
+      <!-- HEADER / INTRO -->
       <section>
         <h1>Dhruv Kohli</h1>
-       <!-- <p><img src="images/dhruv_siam_mds_2024.jpg" height="300" alt="Me"></p> -->
-        <p><img src='images/dhruv_siam_mds_2024.jpg' height='200' />
-        <br>
-          *at SIAM MDS, Atlanta, 2024.
+        <img src="images/dhruv_siam_mds_2024.jpg" height="200" alt="Dhruv Kohli at SIAM MDS, Atlanta, 2024" class="profile-img">
+        <p class="img-caption">*at SIAM MDS, Atlanta, 2024.</p>
+        
+        <p>
+          I am a postdoc in the <a href="https://www.pacm.princeton.edu/">Program in Applied and Computational Mathematics</a> at Princeton University, working with <a href="https://web.math.princeton.edu/~amits/">Amit Singer</a>.
+        </p>
+        <p>
+          I completed my PhD in mathematics with a specialization in computational science at UC San Diego, where I was fortunate to be advised by <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a> and <a href="http://mishne.ucsd.edu/">Gal Mishne</a>.
         </p>
       </section>
 
-<!--       <section>
-          My research interests are:
-          <ul>
-            <li>Spectral geometry</li>
-            <li>Manifold learning</li>
-        </ul>
-      </section> -->
-      
+      <hr>
+
+      <!-- PUBLICATIONS -->
       <section>
-        I am a postdoc in the <a href="https://www.pacm.princeton.edu/">Program in Applied and Computational Mathematics</a> at Princeton University, working with <a href="https://web.math.princeton.edu/~amits/">Amit Singer</a>.
-        <br>
-        I completed my PhD in mathematics with a specialization in computational science at UC San Diego, where I was fortunate to be advised by <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a> and <a href="http://mishne.ucsd.edu/">Gal Mishne</a>.
-        <br>
-        My research areas are geometric data analysis, manifold learning, spectral graph theory, optimization and optimal transport. 
-        <br>
-<!--           During my PhD, I have focused on the following key questions:
-          <ol>
-            <li>How to obtain low distortion low-dimensional local representations of high-dimensional data <i>while accounting for the global geometry of the data manifold</i>.
-              </li>
-            <li>How to integrate these local representations in an <i>efficient and robust manner</i> to produce a low-distortion global embedding.
-              </li>
-            <li>How does the distortion incurred in the low-dimensional embedding impacts the performance of the downstream tasks.
-            </li>
-          </ol>
-        <br> -->
-        <hr>
-        <h3>
-          Publications
-        </h3>
-<hr>
-        <ul>
+        <h3>Publications</h3>
+
+        <h4>Preprints</h4>
+        <ul class="publications">
           <li>
-       <b><a href="https://arxiv.org/abs/2510.02308">Robust tangent space estimation via Laplacian eigenvector gradient orthogonalization</a></b>.
-        <br>
-         with <a href="https://mathweb.ucsd.edu/~s5robert/index.html">Sawyer Robertson</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>
-        <br>
-        Submitted, 2025 <a href="https://arxiv.org/abs/2510.02308">[arXiv]</a>
-        <br>
-        <ul style="padding-left: 10px;">
+            <b><a href="https://arxiv.org/abs/2510.02308">Robust tangent space estimation via Laplacian eigenvector gradient orthogonalization</a></b>.<br>
+            with <a href="https://mathweb.ucsd.edu/~s5robert/index.html">Sawyer Robertson</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>.<br>
+            Submitted, 2025 <a href="https://arxiv.org/abs/2510.02308">[arXiv]</a>
+            <ul class="sub-list">
+              <li>Best paper award runner-up, New Perspectives in Advancing Graph Machine Learning, NeurIPS 2025 Workshop.</li>
+            </ul>
+          </li>
+
           <li>
-         Best paper award runner-up, New Perspectives in Advancing Graph Machine Learning, NeurIPS 2025 Workshop.
+            <b><a href="https://arxiv.org/abs/2411.18942">Robust estimation of boundary using doubly stochastic scaling of Gaussian kernel</a></b>.<br>
+            with <a href="https://he-jesse.github.io/">Jesse He</a>, <a href="https://cseweb.ucsd.edu/~chholtz/">Chester Holtz</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>.<br>
+            Preprint. <a href="https://arxiv.org/abs/2411.18942">[arXiv]</a> <a href="https://github.com/chiggum/robust_boundary_estimation">[Code]</a>
+          </li>
+
+          <li>
+            <b><a href="https://www.biorxiv.org/content/10.1101/2024.10.31.621292v2">RATS: Unsupervised manifold learning using low-distortion alignment of tangent spaces</a></b>.<br>
+            with <a href="#">Johannes S. Nieuwenhuis</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>, <a href="https://neuro.nl/person/Devika-Narain">Devika Narain</a>.<br>
+            Under review. <a href="https://www.biorxiv.org/content/10.1101/2024.10.31.621292v2">[bioRxiv]</a>
+          </li>
+
+          <li>
+            <b><a href="#">Tear- and repulsion-enabled registration of point clouds with global distortion bounds</a></b>.<br>
+            with <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>.<br>
+            Submitted, 2024 <a href="#">[arXiv]</a> <a href="https://pyldle2.readthedocs.io/en/latest/index.html">[Code]</a>
           </li>
         </ul>
-      </li>
-          <br>
+
+        <h4>Journals</h4>
+        <ul class="publications">
           <li>
-       <b><a href="https://arxiv.org/abs/2411.18942">Robust estimation of boundary using doubly stochastic scaling of Gaussian kernel</a></b>.
-        <br>
-         with <a href="https://he-jesse.github.io/">Jesse He</a>, <a href="https://cseweb.ucsd.edu/~chholtz/"> Chester Holtz</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>
-        <br>
-        Preprint. <a href="https://arxiv.org/abs/2411.18942">[arXiv]</a><a href="https://github.com/chiggum/robust_boundary_estimation">[Code]</a>
-        <br>
-      </li>
-          <br>
+            <b><a href="https://doi.org/10.1137/23M1624828">On a generalization of Wasserstein distance and the Beckmann problem to connection graphs</a></b>.<br>
+            with <a href="https://mathweb.ucsd.edu/~s5robert/index.html">Sawyer Robertson</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>.<br>
+            SIAM Journal on Scientific Computing. <a href="https://arxiv.org/abs/2312.10295">[arXiv]</a>
+          </li>
+
           <li>
-       <b><a href="https://www.biorxiv.org/content/10.1101/2024.10.31.621292v2">RATS: Unsupervised manifold learning using low-distortion alignment of tangent spaces</a></b>.
-        <br>
-         with <a href="">Johannes S. Nieuwenhuis</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>, <a href="https://neuro.nl/person/Devika-Narain"> Devika Narain</a>
-        <br>
-        Under review. <a href="https://www.biorxiv.org/content/10.1101/2024.10.31.621292v2">[bioRxiv]</a>
-        <br>
-      </li>
-          <br>
+            <b><a href="https://epubs.siam.org/doi/full/10.1137/23M1593280">Non-degenerate rigid alignment in a patch framework</a></b>.<br>
+            with <a href="http://mishne.ucsd.edu/">Gal Mishne</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>.<br>
+            SIAM Journal on Optimization. <a href="https://arxiv.org/abs/2303.11620">[arXiv]</a>
+          </li>
+
           <li>
-       <b><a href=""> Tear- and repulsion-enabled registration of point clouds with global distortion bounds</a></b>.
-        <br>
-         with <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>
-        <br>
-        Submitted, 2024 <a href="">[arXiv]</a> <a href="https://pyldle2.readthedocs.io/en/latest/index.html">[Code]</a>
-        <br>
-      </li>
-          <br>
+            <b><a href="http://jmlr.org/papers/v22/21-0131.html">LDLE: Low Distortion Local Eigenmaps</a></b>.<br>
+            with <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>.<br>
+            Journal of Machine Learning Research, Volume 22, 2021. <a href="https://arxiv.org/abs/2101.11055">[arXiv]</a> <a href="https://pyldle2.readthedocs.io/en/latest/index.html">[Code]</a>
+          </li>
+
           <li>
-       <b><a href="https://doi.org/10.1137/23M1624828"> On a generalization of Wasserstein distance and the Beckmann problem to connection graphs</a></b>.
-        <br>
-         with <a href="https://mathweb.ucsd.edu/~s5robert/index.html">Sawyer Robertson</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>
-        <br>
-        SIAM Journal on Scientific Computing. <a href="https://arxiv.org/abs/2312.10295">[arXiv]</a>
-        <br>
-      </li>
-          <br>
-           <li>
-       <b><a href="https://epubs.siam.org/doi/full/10.1137/23M1593280"> Non-degenerate rigid alignment in a patch framework</a></b>.
-        <br>
-         with <a href="http://mishne.ucsd.edu/"> Gal Mishne</a>, <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>
-        <br>
-        SIAM Journal on Optimization. <a href="https://arxiv.org/abs/2303.11620">[arXiv]</a>
-        <br>
-      </li>
-          <br>
+            <b><a href="https://doi.org/10.1007/s00022-020-00545-4">Asymmetric expansion preserves hyperbolic convexity</a></b>.<br>
+            with <a href="https://mathweb.ucsd.edu/~jrabin/">Jeffrey Rabin</a>.<br>
+            Journal of Geometry, Volume 111 Article 33, 2020. <a href="https://arxiv.org/pdf/2002.04714.pdf">[arXiv]</a>
+          </li>
+
           <li>
-       <b><a href="http://jmlr.org/papers/v22/21-0131.html"> LDLE: Low Distortion Local Eigenmaps</a></b>.
-        <br>
-         with  <a href="https://sites.google.com/ucsd.edu/alexandercloninger">Alex Cloninger</a>, <a href="http://mishne.ucsd.edu/">Gal Mishne</a>
-        <br>
-        Journal of Machine Learning Research, Volume 22, 2021. <a href="https://arxiv.org/abs/2101.11055">[arXiv]</a> <a href="https://pyldle2.readthedocs.io/en/latest/index.html">[Code]</a>
-        <br>
-      </li>
-          <br>
-      <li>
-       <b><a href="https://doi.org/10.1007/s00022-020-00545-4"> Asymmetric expansion preserves hyperbolic convexity</a></b>.
-        <br>
-         with <a href="https://mathweb.ucsd.edu/~jrabin/">Jeffrey Rabin</a>
-        <br>
-        Journal of Geometry, Volume 111 Article 33, 2020. <a href="https://arxiv.org/pdf/2002.04714.pdf">[arXiv]</a>
-        <br>
-      </li>
-          <br>
-      <li>
-        <b><a href="https://doi.org/10.1007/s00022-019-0497-8"> Radial expansion preserves hyperbolic convexity and radial contraction preserves spherical convexity</a></b>.
-      <br>
-        with <a href="https://mathweb.ucsd.edu/~jrabin/">Jeffrey Rabin</a>
-        <br>
-        Journal of Geometry, Volume 110, Article 40, 2019. <a href="https://arxiv.org/pdf/2002.04708.pdf">[arXiv]</a>
-        <br>
-      </li>
-          <br>
-      <li>
-        <b><a href="https://doi.org/10.1109/ICASSP.2017.7952676"> Learning rotation invariance in deep hierarchies using circular symmetric filters</a></b>.
-        <br>
-         with B. C. Das, V. Gopalakrishnan, K. N. Iyer.
-        <br>
-          2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), New Orleans, LA, 2017, pp. 2846-2850.
-        <br>
-        </li>
+            <b><a href="https://doi.org/10.1007/s00022-019-0497-8">Radial expansion preserves hyperbolic convexity and radial contraction preserves spherical convexity</a></b>.<br>
+            with <a href="https://mathweb.ucsd.edu/~jrabin/">Jeffrey Rabin</a>.<br>
+            Journal of Geometry, Volume 110, Article 40, 2019. <a href="https://arxiv.org/pdf/2002.04708.pdf">[arXiv]</a>
+          </li>
+        </ul>
+
+        <h4>Conferences</h4>
+        <ul class="publications">
+          <li>
+            <b><a href="https://doi.org/10.1109/ICASSP.2017.7952676">Learning rotation invariance in deep hierarchies using circular symmetric filters</a></b>.<br>
+            with B. C. Das, V. Gopalakrishnan, K. N. Iyer.<br>
+            2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), New Orleans, LA, 2017, pp. 2846-2850.
+          </li>
         </ul>
       </section>
 
-      <section>
       <hr>
+
+      <!-- CONFERENCES & PRESENTATIONS -->
+      <section>
         <h3>Conferences and Presentations</h3>
-        <hr> 
         <table>
-          <tr>
-            <td>Dec 2025</td>
-          <td>[Talk]</td>
-          <td>NeurIPS workshop on New Perspectives in Advancing Graph Machine Learning, San Diego.</td>
-          </tr>
-          <tr>
-          <tr>
-            <td>Jan 2025</td>
-          <td>[Talk]</td>
-          <td>IDEAS Seminar, Program in Applied and Computational Mathematics, Princeton University.</td>
-          </tr>
-          <tr>
-            <td>Oct 2024</td>
-          <td>[Poster]</td>
-          <td>SIAM Conference on Mathematics of Data Science (SIAM MDS), Atlanta.</td>
-          </tr>
-          <tr>
-          <td>Sep 2024</td>
-          <td>[Poster]</td>
-          <td>NSF visit, The Institute for Emerging CORE Methods in Data Science (EnCORE), UC San Diego.</td>
-          </tr>
-          <tr>
-            <td>Apr 2024</td>
-          <td></td>
-          <td>Chaos, Computation, Analysis and Optimization (CaCAO), Scripps Institute of Oceanography, UC San Diego.</td>
-          </tr>
-          <tr>
-            <td>Mar 2024</td>
-          <td>[Talk]</td>
-          <td>Dagstuhl Seminar on Low-Dimensional Embeddings of High-Dimensional Data: Algorithms and Applications, Wadern, Germany.</td>
-          </tr>
-          <tr>
-            <td>Jul 2023</td>
-          <td></td>
-          <td>Sampling Theory and Applications Conference (SAMPTA), Yale.</td>
-          </tr>
-          <tr>
-            <td>Apr 2023</td>
-          <td>[Talk]</td>
-          <td>Southern California Applied Mathematics Symposium (SOCAMS) at UC Irvine.</td>
-          </tr>
-          <tr>
-            <td>Mar 2023</td>
-          <td>[Poster]</td>
-          <td>Computational and Systems Neuroscience (COSYNE), Montreal.</td>
-          </tr>
-          <tr>
-            <td>Oct 2022</td>
-          <td>[Poster]</td>
-          <td>Fall Fourier Talks (FFT) at the Norbert Wiener Center, University of Maryland.</td>
-          </tr>
-          <tr>
-            <td>Mar 2021</td>
-          <td>[Poster]</td>
-          <td>SoCal ML and NLP Symposium 2021 at UC San Diego.</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td style="white-space: nowrap;">Dec 2025</td>
+              <td>[Talk]</td>
+              <td>NeurIPS workshop on New Perspectives in Advancing Graph Machine Learning, San Diego.</td>
+            </tr>
+            <tr>
+              <td style="white-space: nowrap;">Jan 2025</td>
+              <td>[Talk]</td>
+              <td>IDEAS Seminar, Program in Applied and Computational Mathematics, Princeton University.</td>
+            </tr>
+            <tr>
+              <td>Oct 2024</td>
+              <td>[Poster]</td>
+              <td>SIAM Conference on Mathematics of Data Science (SIAM MDS), Atlanta.</td>
+            </tr>
+            <tr>
+              <td>Sep 2024</td>
+              <td>[Poster]</td>
+              <td>NSF visit, The Institute for Emerging CORE Methods in Data Science (EnCORE), UC San Diego.</td>
+            </tr>
+            <tr>
+              <td>Apr 2024</td>
+              <td></td>
+              <td>Chaos, Computation, Analysis and Optimization (CaCAO), Scripps Institute of Oceanography, UC San Diego.</td>
+            </tr>
+            <tr>
+              <td>Mar 2024</td>
+              <td>[Talk]</td>
+              <td>Dagstuhl Seminar on Low-Dimensional Embeddings of High-Dimensional Data: Algorithms and Applications, Wadern, Germany.</td>
+            </tr>
+            <tr>
+              <td>Jul 2023</td>
+              <td></td>
+              <td>Sampling Theory and Applications Conference (SAMPTA), Yale.</td>
+            </tr>
+            <tr>
+              <td>Apr 2023</td>
+              <td>[Talk]</td>
+              <td>Southern California Applied Mathematics Symposium (SOCAMS) at UC Irvine.</td>
+            </tr>
+            <tr>
+              <td>Mar 2023</td>
+              <td>[Poster]</td>
+              <td>Computational and Systems Neuroscience (COSYNE), Montreal.</td>
+            </tr>
+            <tr>
+              <td>Oct 2022</td>
+              <td>[Poster]</td>
+              <td>Fall Fourier Talks (FFT) at the Norbert Wiener Center, University of Maryland.</td>
+            </tr>
+            <tr>
+              <td>Mar 2021</td>
+              <td>[Poster]</td>
+              <td>SoCal ML and NLP Symposium 2021 at UC San Diego.</td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
-      <section>
       <hr>
+
+      <!-- TEACHING ASSISTANT EXPERIENCE -->
+      <section>
         <h3>Teaching Assistant Experience</h3>
-        <hr> 
         <table>
-          <tr>
-            <td>DSC 205</td>
-            <td>UCSD</td>
-            <td>Geoemtry of Data</td>
-          </tr>
-          <tr>
-            <td>Math 170A</td><td>UCSD</td>
-            <td>Numerical Linear Algebra</td>
-          </tr>
-          <tr>
-            <td>Math 170B</td><td>UCSD</td>
-            <td> Numerical Approximation and Nonlinear Equations</td>
-          </tr>
-          <tr>
-            <td>Math 183</td><td>UCSD</td>
-            <td>Statistical Methods</td>
-          </tr>
-          <tr>
-            <td>Math 20E</td><td>UCSD</td>
-            <td>Vector Calculus</td>
-          </tr>
-          <tr>
-            <td>Math 11</td><td>UCSD</td>
-            <td>Calculus Based Probability and Statistics.</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td><strong>DSC 205</strong></td>
+              <td>UCSD</td>
+              <td>Geometry of Data</td>
+            </tr>
+            <tr>
+              <td><strong>Math 170A</strong></td>
+              <td>UCSD</td>
+              <td>Numerical Linear Algebra</td>
+            </tr>
+            <tr>
+              <td><strong>Math 170B</strong></td>
+              <td>UCSD</td>
+              <td>Numerical Approximation and Nonlinear Equations</td>
+            </tr>
+            <tr>
+              <td><strong>Math 183</strong></td>
+              <td>UCSD</td>
+              <td>Statistical Methods</td>
+            </tr>
+            <tr>
+              <td><strong>Math 20E</strong></td>
+              <td>UCSD</td>
+              <td>Vector Calculus</td>
+            </tr>
+            <tr>
+              <td><strong>Math 11</strong></td>
+              <td>UCSD</td>
+              <td>Calculus Based Probability and Statistics</td>
+            </tr>
+          </tbody>
         </table>
       </section>
-      
+
+      <hr>
+
+      <!-- LINKS -->
       <section>
-        <hr>
-        <h3>Links </h3>
-        <hr>
-        <p class="view"><a href="https://scholar.google.co.in/citations?user=PRoNigMAAAAJ&hl=en">Google Scholar</a></p>
-        <p class="view"><a href="https://github.com/chiggum">Github Profile</a></p>
-        <p class="view"><a href="https://math.stackexchange.com/users/97188/dhruv-kohli-expittp1z0">Math.StackExchange Profile</a></p>
-        <p class="view"><a href="https://chiggum.github.io/CV.pdf">CV</a></p>
-        <!-- <p class="view"><a href="https://chiggum.github.io/relevant_courses_btech_ms.pdf">Relevant coursework B.Tech + MS</a></p> -->
-        <p class="view"><a href="https://github.com/chiggum/mindthegap">Mindthegap</a>: An opensource tracing software that converts bitmaps into vector graphics.</p>
-        <p class="view">My <a href="https://github.com/chiggum/cuda-challenge-india-2014/blob/master/main.cu">winning solution</a>  for the Nvidia CUDA Coding Challenge India 2014.</p> 
+        <h3>Links</h3>
+        <div class="links-grid">
+          <p><a href="https://scholar.google.co.in/citations?user=PRoNigMAAAAJ&hl=en">Google Scholar</a></p>
+          <p><a href="https://github.com/chiggum">Github Profile</a></p>
+          <p><a href="https://math.stackexchange.com/users/97188/dhruv-kohli-expittp1z0">Math.StackExchange Profile</a></p>
+          <p><a href="https://chiggum.github.io/CV.pdf">Curriculum Vitae (CV)</a></p>
+          <p><a href="https://github.com/chiggum/mindthegap">Mindthegap</a>: An opensource tracing software that converts bitmaps into vector graphics.</p>
+          <p>My <a href="https://github.com/chiggum/cuda-challenge-india-2014/blob/master/main.cu">winning solution</a> for the Nvidia CUDA Coding Challenge India 2014.</p>
+        </div>
       </section>
-    </div>
+
+    </main>
+
     <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
